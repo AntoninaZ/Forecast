@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+   <style>
+    p{
+     margin-top: 1em;
+     }
+
+    .right {
+      float: right;
+      margin: 20px 20px;
+     }
+
+    .left {
+      float: left;
+      margin: 20px 20px;
+      display: inline;
+     }
+
+    .center {
+      margin: 20px ;
+      display: block;
+	}
+
+  .day_night {
+    display: block;
+  }
+
+   </style>
+    </head>
+
+ <body>
+
+  <select class="left">
+   <option value="Перша пятірочка">Перша пятірочка</option>
+   <option value="Друга пятірочка">Друга пятірочка</option>
+   <option value="Третя пятірочка">Третя пятірочка</option>
+   <option value="Четверта пятірочка">Четверта пятірочка</option>
+   <option value="Пята пятірочка">Пята пятірочка</option>
+  </select>
+
+
+  <select class="right">
+   <option value="Синоптик 1">Синоптик 1</option>
+   <option value="Синоптик 2">Синоптик 2</option>
+   <option value="Синоптик 3">Синоптик 3</option>
+   <option value="Синоптик 4">Синоптик 4</option>
+   <option value="Синоптик 5">Синоптик 5</option>
+  </select>
+
+
+<div class="day_night">
+   	 <div class="left">
+    		<h3>День</h3>
+   		<input maxlength="2" size="2" type="text" id="myText" placeholder="Мін">
+  		<input maxlength="2" size="2" type="text" id="myText" placeholder="Мін">
+   	</div>
+
+    	<div class="right">
+    		<h3>Ніч</h3>
+   		<input maxlength="2" size="2" type="text" id="myText" placeholder="Мін">
+  		 <input maxlength="2" size="2" type="text" id="myText" placeholder="Макс">
+   	</div>
+</div>
+
+
+	Тип хмарності
+
+		<form class="center" >
+  			<input type="radio" name="Тип хмарності" value="Безхмарно" checked>Безхмарно
+  			<input type="radio" name="Тип хмарності" value="Малохмарно">Малохмарно
+			<input type="radio" name="Тип хмарності" value="Мінлива хмарність">Мінлива хмарність
+ 			<input type="radio" name="Тип хмарності" value="Хмарно з проясненнями">Хмарно з проясненнями
+			<input type="radio" name="Тип хмарності" value="Хмарно" >Хмарно
+    			<input type="radio" name="Тип хмарності" value="Пасмурно">Пасмурно
+		</form>
+
+
+	<div class="left">
+
+		Вітер
+
+		<input maxlength="2" size="2" type="text" id="myText" placeholder="Мін">
+
+  	 	<input maxlength="2" size="2" type="text" id="myText" placeholder="Макс">
+
+		м/с
+
+	</div>
+
+	<div class="center">
+
+		Напрямок вітру:
+
+
+		<select >
+			<option value="Східний">Східний</option>
+			<option value="Північно Східний">Північно Східний</option>
+			<option value="Північний">Північний</option>
+			<option value="Північно Західний">Північно Західний</option>
+			<option value="Західний">Західний</option>
+			<option value="Південно Західний">Південно Західний</option>
+			<option value="Південний">Південний</option>
+			<option value="Південно Східний">Південно Східний</option>
+		</select>
+
+	</div>
+
+	<div class="right">
+
+		Опади:
+
+		<select >
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+
+	</div>
+
+	<p class="left">
+	Інші атмосферні явища
+	</p>
+
+	<textarea maxlength="200" rows="4" cols="50" class="center">
+
+
+	</textarea>
+
+
+	<button type="button" >
+		Відправити
+	</button>
+
+
+</body>
+</html>
