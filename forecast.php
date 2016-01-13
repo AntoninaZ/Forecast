@@ -4,34 +4,38 @@
     <link href="forecast_style.css" rel="stylesheet">
  </head>
  <body>
-  <div>
-    <p class="p_city">Ужгород</p>
-    <a href="index.php" class="a_other">інші населені пункти</a>
+  <div class="main_div">
+
+  <!--  <a href="index.php" class="a_other">інші населені пункти</a>-->
     <div id="pic">
 
-      <img src="img/sun.png" width="100px">
+      <img src="img/sun_cloud.png" class="margin_main">
 
     </div>
     <div id="text">
-      <p class="p_grad">12/01/2016</p>
+      <p class="p_blue">Ужгород</p>
+      <p class="p_gray">12/01/2016</p>
+    </div>
       <table>
         <tr>
-          <td><img src="img/sun.png" width="30px" id="pic"></td>
+          <td colspan="2">День</td>
+          <td colspan="2">Ніч</td>
+        </tr>
+        <tr>
+          <td><img src="img/thermometer.png"></td>
           <td>2-4</td>
-          <td><img src="img/sun.png" width="30px" id="pic"></td>
+          <td><img src="img/thermometer.png"></td>
           <td>2-4</td>
         </tr>
         <tr>
-          <td><img src="img/sun.png" width="30px" id="pic"></td>
+          <td><img src="img/east_arrow.png" width="30px"></td>
           <td>2-4</td>
         </tr>
         <tr>
-          <td><img src="img/sun.png" width="30px" id="pic"></td>
-          <td>2-4</td>
+          <td><img src="img/other.png"></td>
+          <td colspan="3">Туман</td>
         </tr>
       </table>
     </div>
-
-  </div>
  </body>
 </html>
