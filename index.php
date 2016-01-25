@@ -2,15 +2,17 @@
   <html>
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link href="style.css" rel="stylesheet">
-      </head>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <link rel='stylesheet' href='bootstrap.min.css' type='text/css' media='all'>
+        <script src="bootstrap.min.js"></script>
+        </head>
       <body>
         <div class="div_border">
           <?php $array = array("bar", "foo");?>
 
-          <select name=“forecast_date” class="left">
+          <select name=“forecast_date ” class="btn-default btn-sm dropdown-toggle">
             <?php for($i = 0; $i < 5; $i++): ?>
-              <option value="<?php echo $i ?>">
+              <option class="caret" value="<?php echo $i ?>">
                 <?php
                   $date  = mktime(0, 0, 0, date("m")  , date("d") + $i, date("Y"));
                   echo  date("d.m.y", $date) ;?>

@@ -1,39 +1,48 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+table {
+  font-size: 13;
+  table-layout: fixed;
 }
 
 #pic {
    float: left;
 }
 
+#text {
+    margin-left: 160px;
+}
+
 .main_div {
-   border: 2px solid #0A416B;
+   border: 1px solid #EEEEEE;
+   background:  #F5F5F5;
    overflow: auto;
-   padding: 10px;
+   width: 500px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .left_div {
   border-right: 1px solid #BDBDBD;
-  padding: 10px;
+  padding-right: 10px;
   float: left;
 }
 
 .right_div {
-  padding: 10px;
+  width: 43%;
   float: right;
+  padding-left: 10px;
+  display: inline-block;
 }
 
-.margin_main {
-   margin: 25px 0px 0px 0px;
+.weather_img {
+   margin: 10px 10px 0px 0px;
    width: 150px;
 }
 
-#text {
-    margin-left: 170px;
-}
+
 
 .p_blue {
   font-size: 24;
@@ -53,27 +62,21 @@ body {
   margin: 6px 15px 6px;
 }
 
-.td_gray_style {
-    background-color: #BDBDBD;
-    vertical-align:middle;
+.right_table {
+    margin-bottom: 0px;
+    line-height: 0.5;
 }
 
-.td_blue_style {
-  background-color: #c6e5fe;
-  vertical-align:middle;
+.left_table {
+  margin-bottom: 0px;
+  line-height: 1.25;
+  border-collapse: separate;
 }
 
-.table_left {
-  margin-left: 170px;
-  font-size: 12;
-  line-height: 0.5;
-}
-
-.table_right {
-  font-size: 12;
-  line-height: 0.5;
-}
-
-.a_other {
-  font-size: 10;
+.tr_header {
+  font-size: 13;
+  color: #0A416B;
+  background: #E0E0E0;
+  text-align: center;
+  height: 20px;
 }
