@@ -1,19 +1,26 @@
 body {
   background: #F5F5F5;
-
+  font-size: 14;
 }
+
+ .div_border {
+   width: 900px;
+   height: auto;;
+   margin: auto;
+   background: #EEEEEE;
+   outline: 1px solid #BDBDBD;
+ }
 
 .right {
   float: right;
-  display: inline;
-  width:50%;
-
+  display: block;
+  margin-right: 200px;
  }
 
  .left {
    float: left;
-   width:50%;
-   display: inline;
+   display: block;
+   margin-left: : 200px;
   }
 
   .center {
@@ -25,44 +32,54 @@ body {
    text-align: center
  }
 
- .div_border {
-   width: 900px;
-   height: 900px;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 40px;
-   background: #E0E0E0;
-   outline: 1px solid #BDBDBD;
+select {
+  display: inline;
+  height: 30px;
+  padding: inherit;
+  }
+
+  .p_title_select {
+    color: #428bca;
+  }
+
+  .div-sl {
+    background: #FFFFFF;
+    padding: 10px;
+  }
+
+    .input-text {
+    display: inline;
+    width: 50px;
+  }
+
+ .r_margin {
+   width: 30px;
  }
 
- input {
-   font-size: 150%;
-   margin: 10px
- }
+ input[type="radio"] {
+    display:none;
+}
 
- select {
-     font-size: 150%;
- }
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(img/radio_unchecked.png) left top no-repeat;
+    cursor:pointer;
+  }
 
- .form_cloud {
-    height: auto;
-    background: #EEEEEE;
- }
+input[type="radio"]:checked + label span {
+    background:url(img/radio_checked.png) left top no-repeat;
+}
 
- .s_p_margin {
-   margin-left: 20px
- }
+.div-radio {
+  padding: 10px;
+}
 
- .m_p_margin {
-   margin-left: 40px
- }
-
- button {
-   display: block;
-   margin: 0 auto;
-   width: 300px;
-   height: 50px;
-   background-color: #78909C;
-   
-   margin-top: 10px;
- }
+.btn-submit {
+  margin: auto;
+  display: block;
+  width: 200px;
+}

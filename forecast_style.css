@@ -4,15 +4,12 @@ body {
 
 table {
   font-size: 13;
-  table-layout: fixed;
 }
 
-#pic {
+.pic {
    float: left;
-}
-
-#text {
-    margin-left: 160px;
+   display: inline-block;
+   padding-right: 10px;
 }
 
 .main_div {
@@ -22,6 +19,7 @@ table {
    width: 500px;
    margin-left: auto;
    margin-right: auto;
+   padding-bottom: 10px;
 }
 
 .left_div {
@@ -31,17 +29,11 @@ table {
 }
 
 .right_div {
-  width: 43%;
+  width: 40%;
   float: right;
   padding-left: 10px;
   display: inline-block;
 }
-
-.weather_img {
-   margin: 10px 10px 0px 0px;
-   width: 150px;
-}
-
 
 
 .p_blue {
@@ -68,10 +60,15 @@ table {
 }
 
 .left_table {
+  display: inline-table;
   margin-bottom: 0px;
   line-height: 1.25;
-  border-collapse: separate;
+  float: right;
 }
+
+  td {
+  padding-bottom: 5px;
+  }
 
 .tr_header {
   font-size: 13;

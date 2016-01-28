@@ -12,20 +12,19 @@
 
     <div class="left_div">
   <!--  <a href="index.php" class="a_other">інші населені пункти</a>-->
-      <div id="pic">
-        <img src="img/sun_cloud.png" class="weather_img">
+
+          <p class="p_blue">Ужгород</p>
+          <p class="p_gray">
+            <?php
+            $date  = mktime(0, 0, 0, date("m")  , date("d") + 1, date("Y"));
+            echo  date("d.m.y", $date) ;?></p>
+
+      <div class="pic">
+        <img src="img/sun_cloud.png">
       </div>
 
-
-        <p class="p_blue">Ужгород</p>
-        <p class="p_gray">
-          <?php
-          $date  = mktime(0, 0, 0, date("m")  , date("d") + 1, date("Y"));
-          echo  date("d.m.y", $date) ;?></p>
-
-  <div id="text">
       <table class="left_table">
-        <tr class="tr_header">
+        <tr >
           <td colspan="2">День</td>
           <td colspan="2">Ніч</td>
         </tr>
@@ -49,7 +48,6 @@
         </tr>
       </table>
       </div>
-</div>
         <?php include 'table_forecast.php'; ?>
 
     </div>
