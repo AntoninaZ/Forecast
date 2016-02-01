@@ -90,7 +90,7 @@
         </div>
 
         <div class="navbar-form">
-        <p>Інші атмосферні явища</p>
+        Інші атмосферні явища
           <textarea name="other_atm_effects" maxlength="200" rows="4" cols="50"></textarea>
         </div>
         <div class="div-submit">

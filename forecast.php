@@ -5,14 +5,12 @@
     <link href="forecast_style.css" rel="stylesheet">
  </head>
  <body>
-
+<form action="filling.php" method="post">
   <div class="main_div container-fluid">
     <div class="alert alert-warning">...</div>
     <div class="alert alert-danger">...</div>
 
     <div class="left_div">
-  <!--  <a href="index.php" class="a_other">інші населені пункти</a>-->
-
           <p class="p_blue">Ужгород</p>
           <p class="p_gray">
             <?php
@@ -51,5 +49,6 @@
         <?php include 'table_forecast.php'; ?>
 
     </div>
+  </form>
  </body>
 </html>
