@@ -5,7 +5,7 @@ body {
 
  .div_border {
    width: 900px;
-   height: auto;;
+   height: auto;
    margin: auto;
    background: #EEEEEE;
    outline: 1px solid #BDBDBD;
@@ -28,33 +28,16 @@ body {
     display: block;
 }
 
- .center_title {
-   text-align: center
- }
-
 select {
   display: inline;
   height: 30px;
   padding: inherit;
   }
 
-  .p_title_select {
-    color: #428bca;
-  }
-
   .div-sl {
     background: #FFFFFF;
     padding: 10px;
   }
-
-    .input-text {
-    display: inline;
-    width: 50px;
-  }
-
- .r_margin {
-   width: 30px;
- }
 
  input[type="radio"] {
     display:none;
@@ -76,6 +59,10 @@ input[type="radio"]:checked + label span {
 
 .div-radio {
   padding: 10px;
+}
+
+.div-submit {
+  padding-bottom: 10px;
 }
 
 .btn-submit {
