@@ -2,10 +2,11 @@
   <table class="right_table table">
     <tr class="tr_header">
     <td/>
-      <?php for($i = 2; $i < 5; $i++): ?>
+      <?php
+       for($i = 2; $i >= 0; $i--): ?>
         <td>
         <?php
-          $date  = mktime(0, 0, 0, date("m")  , date("d")  + $i, date("Y"));
+          $date  = strtotime($dateF_arr[$i]);
           echo getDayUkr($date);
           echo  date(", d.m", $date);?>
         </td>

@@ -35,18 +35,18 @@ table {
   display: inline-block;
 }
 
-
 .p_blue {
   font-size: 24;
   margin: 0px;
   color: #0A416B;
-  display: inline;
+  display: block;
 }
 
 .p_gray {
   font-size: 12;
   line-height: 0.5;
   color: #9E9E9E;
+  display: block;
 }
 
 #text_style {
