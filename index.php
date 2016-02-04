@@ -14,8 +14,8 @@
           <?php $synopt_arr = array("Синоптик1", "Синоптик2", "Синопти3");?>
 
           <div class="container-fluid div-sl">
-            <p class="p_title_select left">Дата прогнозу <select name="forecast_date"  class="dropdown-toggle  btn btn-primary">
-              <?php for($i = 0; $i < 5; $i++):
+            <p class="p_title_select left">Дата прогнозу <select name="forecast_date"  class="dropdown-toggle btn btn-primary">
+              <?php for($i = 1; $i < 5; $i++):
                 $date  = mktime(0, 0, 0, date("m")  , date("d") + $i, date("Y"));?>
                 <option type="date" class="caret" value="<?php echo date("y-m-d", $date) ?>">
                   <?php

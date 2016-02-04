@@ -9,8 +9,7 @@ table {
 .pic {
    float: left;
    display: inline-block;
-   padding-right: 10px;
-}
+  }
 
 .main_div {
    border: 1px solid #EEEEEE;
@@ -24,8 +23,9 @@ table {
 
 .left_div {
   border-right: 1px solid #BDBDBD;
-  padding-right: 10px;
+  padding-right: 5px;
   float: left;
+  width: 60%;
 }
 
 .right_div {
@@ -49,14 +49,8 @@ table {
   display: block;
 }
 
-#text_style {
-  color: #9E9E9E;
-  margin: 6px 15px 6px;
-}
-
-.right_table {
-    margin-bottom: 0px;
-    line-height: 0.5;
+.left-title {
+  text-align: center;
 }
 
 .left_table {
@@ -64,11 +58,33 @@ table {
   margin-bottom: 0px;
   line-height: 1.25;
   float: right;
+  width: 110px;
 }
 
-  td {
-  padding-bottom: 5px;
-  }
+.td-lb {
+  border-left-color: #BDBDBD;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.text-bold-g {
+  color: #616161;
+  font-weight: bold;
+}
+
+.text-bold-gl {
+  color: #9E9E9E;
+  font-weight: bold;
+}
+
+.right_table {
+  margin-bottom: 0px;
+  line-height: 0.5;
+}
+
+td {
+  padding-left: 5px;
+}
 
 .tr_header {
   font-size: 13;

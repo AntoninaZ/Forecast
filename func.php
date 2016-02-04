@@ -5,7 +5,7 @@
     case 0: echo "img/sun.png"; break;
     case 1: echo "img/cloud.png"; break;
     case 2: echo "img/cloud.png"; break;
-    case 3: echo "img/sun_cloud.png"; break;
+    case 3: echo "img/snow.png"; break;
     case 4: echo "img/cloud.png"; break;
     case 11: echo "img/snow.png"; break;
     case 21: echo "img/south_arrow.png"; break;

@@ -2,8 +2,7 @@
   <table class="right_table table">
     <tr class="tr_header">
     <td/>
-      <?php
-       for($i = 2; $i >= 0; $i--): ?>
+      <?php for($i = 2; $i >= 0; $i--): ?>
         <td>
         <?php
           $date  = strtotime($dateF_arr[$i]);
@@ -14,24 +13,26 @@
     </tr>
     <tr>
       <td rowspan="2"><img src="img/thermometer.png" align="ABSMIDDLE" width="20px"></td>
-      <td>Ніч</td>
-      <td>Ніч</td>
-      <td>Ніч</td>
+      <?php for($i = 2; $i >= 0; $i--): ?>
+        <td><?php echo number_format(($tempMaxDay_arr[$i] + $tempMinDay_arr[$i]) / 2, 0)."°"; ?></td>
+      <?php endfor; ?>
     </tr>
     <tr>
-      <td>Ніч</td>
-      <td>Ніч</td>
-      <td>Ніч</td>
+      <?php for($i = 2; $i >= 0; $i--): ?>
+        <td><?php echo number_format(($tempMaxNight_arr[$i] + $tempMinNight_arr[$i]) / 2, 0)."°"; ?></td>
+      <?php endfor; ?>
     </tr>
     <tr>
       <td><img src="img/east_arrow.png" width="20px"></td>
-      <td>Ніч</td>
-      <td>Ніч</td>
-      <td>Ніч</td>
+      <?php for($i = 2; $i >= 0; $i--): ?>
+        <td>
+          <?php echo number_format(($windMax_arr[$i] + $windMin_arr[$i]) / 2, 0); ?>
+        </td>
+      <?php endfor;?>
     </tr>
     <tr>
-      <td><img src="img/other.png" width="20px"></td>
-      <td>Ніч</td>
+      <td></td>
+      <td><img src="img/snow_gray.png"></td>
       <td>Ніч</td>
       <td>Ніч</td>
     </tr>
