@@ -1,10 +1,10 @@
 ﻿<html>
 <body>
 
+  <h2><?php echo "Дані відправлені";?><br/></h2>
   <?php
-    echo $_GET["direction"];
-    echo "<br><br>";
     print_r($_GET);
+    echo "<br>";
 
     $dateForecast  = $_GET["forecast_date"];
     $minTempD      = $_GET["dayMin"];
@@ -18,7 +18,7 @@
     $precipitation = $_GET["precipitation"];
     $otherAtmEff   = $_GET["other_atm_effects"];
     $synoptic      = $_GET["synoptic"];
-    echo $windDir;
+
     mysql_connect("localhost", "qwerty", "12345") or die (mysql_error ());
     mysql_select_db("db_forecast") or die(mysql_error());
 
@@ -35,5 +35,8 @@
     mysql_close();
 
   ?>
+  <br/>
+  <br/>
+<a href="index.php">Ввести прогноз на наступний день</a>
 </body>
 </html>

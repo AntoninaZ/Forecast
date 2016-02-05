@@ -1,15 +1,22 @@
 
   <?php
-  function getMainSrcUlr($param) {
-    switch ($param) {
-    case 0: echo "img/sun.png"; break;
-    case 1: echo "img/cloud.png"; break;
-    case 2: echo "img/cloud.png"; break;
-    case 3: echo "img/snow.png"; break;
-    case 4: echo "img/cloud.png"; break;
-    case 11: echo "img/snow.png"; break;
-    case 21: echo "img/south_arrow.png"; break;
-    case 41: echo "img/south_east_arrow.png"; break;
+  function getMainSrcUlr($paramCloud, $paramPrecipitation) {
+    switch ($paramPrecipitation) {
+      case 0:
+        switch ($paramCloud) {
+          case 0:
+           echo "img/sun.png"; break;
+          case 1: case 2: case 4: case 5:
+           echo "img/cloud.png"; break;
+          case 3:
+            echo "img/sun_cloud.png"; break;
+        } break;
+      case 1: case 5: case 7: case 8: case 9: case 12:
+        echo "img/snow.png"; break;
+      case 2: case 3: case 4: case 6: case 11:
+        echo "img/rain.png"; break;
+      default:
+        break;
     }
   }
 
@@ -23,6 +30,26 @@
     case 5: echo "img/south_west_arrow.png"; break;
     case 6: echo "img/south_arrow.png"; break;
     case 7: echo "img/south_east_arrow.png"; break;
+    }
+  }
+
+  function getTitleForecast($paramCloud, $paramPrecipitation) {
+    switch ($paramPrecipitation) {
+      case 0:
+        switch ($paramCloud) {
+          case 0:
+           echo "Ясно"; break;
+          case 1: case 2: case 4: case 5:
+           echo "Хмарно"; break;
+          case 3:
+            echo "Хмарно з проясненням"; break;
+        } break;
+      case 1: case 5: case 7: case 8: case 9: case 12:
+        echo "Сніг"; break;
+      case 2: case 3: case 4: case 6: case 11:
+        echo "Дощ"; break;
+      default:
+        break;
     }
   }
 
@@ -41,6 +68,26 @@
     case 10: echo "Мряка"; break;
     case 10: echo "Сильний дощ"; break;
     case 10: echo "Сильний сніг"; break;
+    }
+  }
+
+  function getSrcUlrMini($paramCloud, $paramPrecipitation) {
+    switch ($paramPrecipitation) {
+      case 0:
+        switch ($paramCloud) {
+          case 0:
+           echo "img/sun_gray.png"; break;
+          case 1: case 2: case 4: case 5:
+           echo "img/cloud_gray.png"; break;
+          case 3:
+            echo "img/sun_cloud_gray.png"; break;
+        } break;
+      case 1: case 5: case 7: case 8: case 9: case 12:
+        echo "img/snow_gray.png"; break;
+      case 2: case 3: case 4: case 6: case 11:
+        echo "img/rain_gray.png"; break;
+      default:
+        break;
     }
   }
   ?>

@@ -27,14 +27,17 @@
       <?php for($i = 2; $i >= 0; $i--): ?>
         <td>
           <?php echo number_format(($windMax_arr[$i] + $windMin_arr[$i]) / 2, 0); ?>
+          <img src="<?php getWindSrcUlr($windDir_arr[$i])?>" width="10px">
         </td>
       <?php endfor;?>
     </tr>
     <tr>
       <td></td>
-      <td><img src="img/snow_gray.png"></td>
-      <td>Ніч</td>
-      <td>Ніч</td>
+      <?php for($i = 2; $i >= 0; $i--): ?>
+        <td>
+          <img src="<?php getSrcUlrMini($typeOfCloud_arr[$i], $precipitation_arr[$i])?>">
+        </td>
+      <?php endfor;?>
     </tr>
   </table>
 </div>
