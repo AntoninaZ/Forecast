@@ -44,10 +44,11 @@
           case 3:
             echo "Хмарно з проясненням"; break;
         } break;
-      case 1: case 5: case 7: case 8: case 9: case 12:
-        echo "Сніг"; break;
-      case 2: case 3: case 4: case 6: case 11:
-        echo "Дощ"; break;
+      case 1: case 2: case 3: case 4:
+       case 5: case 6: case 7: case 8:
+        case 9: case 10: case 12:
+        getPrecipitationSrt($paramPrecipitation);
+         break;
       default:
         break;
     }
@@ -66,8 +67,8 @@
     case 8: echo "Сніг"; break;
     case 9: echo "Мокрий сніг"; break;
     case 10: echo "Мряка"; break;
-    case 10: echo "Сильний дощ"; break;
-    case 10: echo "Сильний сніг"; break;
+    case 11: echo "Сильний дощ"; break;
+    case 12: echo "Сильний сніг"; break;
     }
   }
 
@@ -89,5 +90,16 @@
       default:
         break;
     }
+  }
+
+  function getDayUkr($date){
+   $days = array(
+   'Нд' , 'Пн' , 'Вт' , 'Ср' ,
+   'Чт' , 'Пт' , 'Сб');
+
+   $num_day = (date('w', $date));
+   $name_day = $days[$num_day];
+
+   return $name_day;
   }
   ?>
