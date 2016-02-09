@@ -41,15 +41,3 @@
     </tr>
   </table>
 </div>
-
-<?php
-function getDayUkr($date){
- $days = array(
- 'Нд' , 'Пн' , 'Вт' , 'Ср' ,
- 'Чт' , 'Пт' , 'Сб');
-
- $num_day = (date('w', $date));
- $name_day = $days[$num_day];
-
- return $name_day;
-}?>
