@@ -1,0 +1,76 @@
+body {
+  background: #F5F5F5;
+  font-size: 14;
+}
+
+h2 {
+  color: #1D74A6;
+}
+
+ .div_border {
+   width: 900px;
+   height: auto;
+   margin: auto;
+   background: #EEEEEE;
+   outline: 1px solid #BDBDBD;
+ }
+
+.right {
+  float: right;
+  display: block;
+  margin-right: 200px;
+ }
+
+ .left {
+   float: left;
+   display: block;
+   margin-left: : 200px;
+  }
+
+  .center {
+    margin: 0 auto;
+    display: block;
+}
+
+select {
+  display: inline;
+  height: 30px;
+  padding: inherit;
+  }
+
+  .div-sl {
+    background: #FFFFFF;
+    padding: 10px;
+  }
+
+ input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(img/radio_unchecked.png) left top no-repeat;
+    cursor:pointer;
+  }
+
+input[type="radio"]:checked + label span {
+    background:url(img/radio_checked.png) left top no-repeat;
+}
+
+.div-radio {
+  padding: 10px;
+}
+
+.div-submit {
+  padding-bottom: 10px;
+}
+
+.btn-submit {
+  margin: auto;
+  display: block;
+  width: 200px;
+}
